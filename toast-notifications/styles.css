@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    justify-content: center;
+}
+
+.main-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    gap: 5em;
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+.main-bar a{
+    display: flex;
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight:500;
+    cursor: pointer;
+}
+
+.main-bar a:hover{
+    opacity: .7;
+}
+
+#toast-box{
+    position: absolute;
+    bottom: 1em;
+    right: 2em;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1em;
+}
+
+.toast{
+    width: 22em;
+    height: 4.5em;
+    background-color: #ffffffe0;
+    font-weight: 500;
+    margin: .75em 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 1em;
+    position: relative;
+}
+
+.toast i{
+    margin: 0 .5em;
+    font-size: 35px;
+    color: green;
+}
+
+.toast.error i{
+    color: red;
+}
+
+.toast.invalid i{
+    color: rgb(255, 149, 0);
+}
+
+.toast::after{
+    border-radius: 1em;
+    content: '';
+    position: absolute;
+    left: .5em;
+    bottom: 5px;
+    width: 95%;
+    height: 5px;
+    background: green;
+    animation: toast-time-bar 5s linear forwards;
+}
+
+.toast.error::after{
+    background: red;
+}
+
+.toast.invalid::after{
+    background: rgb(255, 149, 0);
+}
+
+@keyframes toast-time-bar{
+    100%{
+        width: 0;
+    }
+}
