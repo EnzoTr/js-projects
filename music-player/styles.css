@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #948e99, #533a5b);
+}
+
+.player-container{
+    display: flex;
+    background-color: rgba(20, 20, 20, 0.4);
+    border-radius: 3em;
+    padding: 2em;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+}
+
+.player i{
+    cursor: pointer;
+}
+
+.player nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.player nav i{
+    font-size: 1.5em;
+}
+
+.player img{
+    max-width: 20em;
+    border-radius: .5em;
+    margin-bottom: 1.5em;
+    opacity: .95;
+}
+
+.player p{
+    opacity: .5;
+}
+
+.player-controls{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    font-size: 2.5em;
+}
+
+#progress-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: .6em;
+    /* background: rgba(255, 255, 255, 0.405); */
+    background: linear-gradient(to right, #fff 0%, #fff var(--progress), #dddddd6b var(--progress), #dddddd6b 100%);
+    border-radius: 100em;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+#progress-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.volume-control{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1em;
+    font-size: 1em;
+}
+
+.volume-control i{
+    opacity: .4;
+}
+
+#volume-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: .6em;
+    /* background: rgba(255, 255, 255, 0.405); */
+    background: linear-gradient(to right, #fff 0%, #fff var(--progress), #dddddd6b var(--progress), #dddddd6b 100%);
+    border-radius: 100em;
+    cursor: pointer;
+}
+
+#volume-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
