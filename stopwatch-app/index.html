@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./Assets/clock.png">
+    <title>Stopwatch</title>
+    <script src="https://kit.fontawesome.com/7156b5f9cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="swatch-container">
+        <div class="clock">
+            <p id="displayTime">00:00:00</p>
+        </div>
+        <div class="controls">
+            <i class="fa-solid fa-stop"></i>
+            <i id="playBtn" class="fa-solid fa-play" onclick="watchStart()"></i>
+            <i class="fa-solid fa-arrow-rotate-left" onclick="watchReset()"></i>
+        </div>
+    </div>
+<script src="./javascript.js"></script>
+</body>
+</html>
