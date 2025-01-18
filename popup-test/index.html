@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./Assets/popup.png">
+    <title>Popup</title>
+    <script src="https://kit.fontawesome.com/7156b5f9cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <button class="submit-btn" onclick="openPopup()">
+            Submit
+        </button>
+        <div class="popup" id="popup">
+            <i class="fa-solid fa-circle-check"></i>
+            <h2>Thank You!</h2>
+            <p>Your detals has been succesfully submitted</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+<script src="./javascript.js"></script>
+</body>
+</html>
