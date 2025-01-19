@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./Assets/icon.png">
+    <script src="https://kit.fontawesome.com/7156b5f9cf.js" crossorigin="anonymous"></script>
+    <title>Quote of the day</title>
+</head>
+<body>
+    <div class="quote-box">
+        <i class="fa-solid fa-quote-left"></i>
+        <div class="quote-block">
+            <blockquote id="quote">Loading...</blockquote>
+            <span id="author">- Loading...</span>
+        </div>
+        <div class="btn-container">
+            <button onclick="getQuote(apiUrl)">New Quote</button>
+            <button onclick="shareTweet()"><i class="fa-brands fa-x-twitter"></i> Tweet</button>
+        </div>
+    </div>
+
+    <script src="./javascript.js"></script>
+</body>
+</html>
