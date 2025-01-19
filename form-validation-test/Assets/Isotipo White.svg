@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2629.93 2564.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 170px;
+      }
+    </style>
+  </defs>
+  <g id="Isotipo_W" data-name="Isotipo W">
+    <g id="Imagotipo_Vectorial" data-name="Imagotipo Vectorial">
+      <g>
+        <polyline class="cls-1" points="1314.96 2479.24 85 1860.48 86.41 1127.2 331.6 1247.6 332.04 637.61 703.4 822.01 703.4 341.15 1314.96 85.88"/>
+        <line class="cls-1" x1="1314.96" y1="1740.85" x2="331.6" y2="1247.6"/>
+        <line class="cls-1" x1="1314.96" y1="1128.79" x2="703.4" y2="822.01"/>
+        <line class="cls-1" x1="1314.96" y1="643.05" x2="703.4" y2="341.15"/>
+      </g>
+      <g>
+        <polyline class="cls-1" points="1314.97 2478.35 2544.93 1859.6 2543.51 1126.32 2298.33 1246.71 2297.89 636.72 1926.53 821.13 1926.53 340.26 1314.97 85"/>
+        <line class="cls-1" x1="1314.97" y1="1739.97" x2="2298.33" y2="1246.71"/>
+        <line class="cls-1" x1="1314.97" y1="1127.91" x2="1926.53" y2="821.13"/>
+        <line class="cls-1" x1="1314.96" y1="642.17" x2="1926.53" y2="340.26"/>
+      </g>
+    </g>
+  </g>
+</svg>
