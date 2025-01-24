@@ -98,8 +98,12 @@ body{
     color:#e9deff;
     outline: none;
     padding: .8em 1em;
-    margin: .7em 0;
+    margin: 0;
     width: 100%;
+}
+
+.input-wrapper{
+    margin: .25em 0;
 }
 
 .input-name-container{
@@ -116,4 +120,14 @@ body{
     padding: 1em 2em;
     margin-top: 3em;
     cursor: pointer;
+}
+
+.input-wrapper span{
+    opacity: .6;
+    font-size: .7em;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    transition: all .2s ease-in-out;
+    /* border: 1px solid red; */
 }

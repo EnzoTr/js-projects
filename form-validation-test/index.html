@@ -19,14 +19,30 @@
             <p>Already have an account? <span>Log in</span></p>
             <div class="input-container">
                 <div class="input-name-container">
-                    <input type="text" placeholder="First name" id="firstName">
-                    <input type="text" placeholder="Last name" id="lastName">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="First name" id="firstName" onkeyup="validateFName()">
+                        <span id="fname-error"></span>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Last name" id="lastName" onkeyup="validateLName()">
+                        <span id="lname-error"></span>
+                    </div>
                 </div>
-                <input type="text" placeholder="Phone number" id="phoneNumber">
-                <input type="text" placeholder="Email" id="email">
-                <input type="password" placeholder="Enter your password" id="password">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Phone number" id="phoneNumber" onkeyup="validatePhone()">
+                    <span id="phone-error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Email" id="email" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="password" placeholder="Enter your password" id="password" onkeyup="validatePassword()">
+                    <span id="password-error"></span>
+                </div>
+                
             </div>
-            <button>Create account</button>
+            <button onclick="return validateForm()">Create account</button>
         </form>
     </section>
 <script src="./javascript.js"></script>
