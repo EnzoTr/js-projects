@@ -22,7 +22,7 @@
                 font-bold 
                 mb-6
             ">
-                The Lastest Trends In Your Inbox Every Week.
+                The Latest Trends In Your Inbox Every Week.
             </h1>
             <p class="
                 opacity-85
@@ -30,15 +30,15 @@
             ">
                 Never miss out on the latest trends, insights, and exclusive updates! Subscribe to our newsletter and get carefully curated content delivered straight to your inbox every week, keeping you informed and inspired.
             </p>
-            <div class="
-                bg-white
-                rounded-2xl
-                px-5
-                pr-2
-                py-2
-                flex
-            ">
-                <input type="text" placeholder="Enter your email address" class="
+            <form name="submit-to-google-sheet" class="
+                  bg-white
+                    rounded-2xl
+                    px-5
+                    pr-2
+                    py-2
+                    flex
+                ">
+                <input required type="email" name="Email List" placeholder="Enter your email address" class="
                     text-gray-950
                     flex-3
                     px-4
@@ -46,7 +46,7 @@
                     bg-transparent
                     "
                 >
-                <button class="
+                <button type="submit" class="
                     bg-cyan-500
                     rounded-2xl
                     px-5
@@ -55,7 +55,7 @@
                     font-semibold
                     cursor-pointer
                 ">Subscribe</button>
-            </div>
+            </form>
         </div>
             
         <div class="
@@ -66,5 +66,9 @@
             <img src="./Assets/Other 01.svg" alt="" class="w-auto">
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+      
 </body>
 </html>

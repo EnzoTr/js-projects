@@ -214,6 +214,9 @@
   .absolute {
     position: absolute;
   }
+  .absolute\! {
+    position: absolute !important;
+  }
   .fixed {
     position: fixed;
   }
@@ -300,6 +303,24 @@
   }
   .clear-start {
     clear: inline-start;
+  }
+  .\!container {
+    width: 100% !important;
+    @media (width >= 40rem) {
+      max-width: 40rem !important;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem !important;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem !important;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem !important;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem !important;
+    }
   }
   .container {
     width: 100%;
@@ -1793,6 +1814,13 @@
   .outline-solid {
     --tw-outline-style: solid;
     outline-style: solid;
+  }
+  .select-all {
+    -webkit-user-select: all;
+    user-select: all;
+  }
+  .\[k\:K\] {
+    k: K;
   }
   .backface-hidden {
     backface-visibility: hidden;
